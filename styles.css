@@ -1,0 +1,143 @@
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3{
+  font-size: 14px;
+}
+p{
+  font-size: 13px;
+}
+
+/* header*/
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+/* sec styles */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  
+}
+
+section {
+  
+  
+  flex-basis: 30%;
+  background-color: #3b3939;
+  border: 1px solid #000;
+  padding: 20px;
+  position: relative;
+  
+}
+section:hover {
+  background-color: maroon;
+}
+
+/* St styles */
+.section-title {
+  color: rgb(70, 94, 231);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 5px 10px;
+  border: 1px solid #000;
+ 
+}
+
+
+/* 
+.chicken-bgg{
+  background-color: #d161d4;
+}
+
+.beef-bgg{
+  background-color: #d161d4;
+}
+
+.sushi-bgg{
+  background-color: #d161d4;
+} */
+
+/* bg colors st */
+.chicken-bg {
+  background-color: #d161d4; 
+}
+
+.beef-bg {
+  background-color: #ff0202; 
+}
+
+.sushi-bg {
+  background-color: #ece91c; 
+}
+
+/* Sec content  */
+.section-content {
+  margin-top: 30px;
+}
+
+/* responsive */
+@media (max-width: 1199px) {
+  section {
+    flex-basis: 48%;
+    margin-bottom: 20px;
+  }
+
+  section:nth-child(3n) {
+    flex-basis: 100%;
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  
+}
+
+@media (max-width: 849px) {
+  .row {
+    flex-wrap: wrap;
+  }
+
+  section {
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row {
+    flex-wrap: nowrap;
+  }
+
+  section {
+    flex-basis: 32%;
+  }
+}
+.row {
+  cursor: pointer;
+}
